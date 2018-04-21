@@ -24,7 +24,6 @@ void Particle_to_mesh_map::weight_particles_charge_to_mesh_for_single_process(
     double volume_around_node = cell_volume;
     int tlf_i, tlf_j, tlf_k; // 'tlf' = 'top_left_far'
     double tlf_x_weight, tlf_y_weight, tlf_z_weight;
-
     for( auto& part_src: particle_sources.sources ) {
 	for( auto& p : part_src.particles ) {
 	    next_node_num_and_weight( vec3d_x( p.position ), dx, &tlf_i, &tlf_x_weight );
